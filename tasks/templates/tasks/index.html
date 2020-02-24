@@ -14,9 +14,9 @@
 
   <h1>Приоритеты</h1>
   <ul>
-  {% for p, count in priorities.items %}
+  {% for p in priority %}
 
-    <li><span class="badge badge-info">{{ p }}: {{ count }}</span></li>
+    <li><span class="badge badge-info">{{ p.name }}: {{ p.todos_count }}</span></li>
 
   {% empty %}
     <li>Список приоритетов пуст. Попробуйте добавить их из админки</li>
